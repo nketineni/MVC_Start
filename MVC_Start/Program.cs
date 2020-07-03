@@ -16,9 +16,9 @@ namespace MVC_Start
     public static void Main(string[] args)
     {
       BuildWebHost(args).Run();
-            Debug.WriteLine("update by Neelima");
-            Debug.WriteLine("update by Rameez");
-            Debug.WriteLine("update by Eric");
+            //Debug.WriteLine("update by Neelima");
+            //Debug.WriteLine("update by Rameez");
+            //Debug.WriteLine("update by Eric");
         }
 
     public static IWebHost BuildWebHost(string[] args) =>
