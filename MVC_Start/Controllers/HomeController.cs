@@ -32,6 +32,18 @@ namespace MVC_Start.Controllers
         [HttpPost]
         public IActionResult Contact(GuestContact contact)
         {
+            char[] arrName = contact.Name.ToCharArray();
+            Array.Reverse(arrName);
+            contact.Name = new string(arrName);
+
+            char[] arrEmail = contact.Email.ToCharArray();
+            Array.Reverse(arrEmail);
+            contact.Email = new string(arrEmail);
+
+            char[] arrPhone = contact.Phone.ToCharArray();
+            Array.Reverse(arrPhone);
+            contact.Phone = new string(arrPhone);
+
             return View(contact);
         }
 
